@@ -8,7 +8,7 @@ services:
     image: amarnath235/mysql:v1
     container_name: mysql # --name mysql
     volumes:
-    - mysql:var/lib/mysql   # -v mysql:/var/lib/mysql
+    - mysql:/var/lib/mysql   # -v mysql:/var/lib/mysql
   backend:
     image: amarnath235/backend:v1
     container_name: backend
